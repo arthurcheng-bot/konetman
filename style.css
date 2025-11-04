@@ -1,0 +1,135 @@
+/* 未來感 + 高科技感 + 簡約 */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a1a;
+  color: #e0e7ff;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 1rem 3rem;
+  background: linear-gradient(135deg, #1a1a3d 0%, #0f0f2d 100%);
+  border-bottom: 1px solid #333366;
+}
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  color: #00d4ff;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #a0b4ff;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+main {
+  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.about {
+  background: rgba(20, 25, 50, 0.6);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid #333366;
+  margin-bottom: 3rem;
+  backdrop-filter: blur(8px);
+}
+
+.about h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #00d4ff;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  color: #7c8fff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: #cfd9ff;
+}
+
+.preview h3 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: #00d4ff;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(30, 35, 70, 0.5);
+  border: 1px solid #333366;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15);
+  border-color: #00d4ff;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.card h4 {
+  color: #00d4ff;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #b0c0ff;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #6666aa;
+  font-size: 0.9rem;
+  border-top: 1px solid #222244;
+}
+
+/* 響應式 */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.8rem; }
+  .hero { padding: 4rem 1rem 2rem; }
+  .about { padding: 2rem; }
+}
